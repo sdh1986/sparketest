@@ -12,7 +12,7 @@
         "如需启用 Everything 搜索功能，请在设置中开启"
     ],
     "url": "https://github.com/BookerLiu/GeekDesk/releases/download/2.5.14/GeekDesk.2.5.14.zip",
-    "hash": "",
+    "hash": "47DF5506AFE8F59C1AF46447398FC72F2092E5B1127D0650ACF0CF61CED74BA1",
     "extract_dir": "GeekDesk 2.5.14",
     "pre_install": [
         "# 创建数据目录",
