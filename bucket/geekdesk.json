@@ -3,17 +3,15 @@
     "description": "小巧、美观的桌面快速启动工具，集成 Everything 搜索功能 (Small, beautiful desktop quickstart management tool with integrated Everything search)",
     "homepage": "https://github.com/BookerLiu/GeekDesk",
     "license": {
-        "identifier": "Freeware",
+        "identifier": "Apache-2.0",
         "url": "https://github.com/BookerLiu/GeekDesk/blob/master/LICENSE"
     },
     "notes": [
         "GeekDesk 是一个免费的桌面快速启动工具",
         "升级前建议备份 Data 文件夹",
-        "如需启用 Everything 搜索功能，请在设置中开启"
+        "如需启用 Everything 搜索功能，请在设置->其它->勾选 Everything 插件开启"
     ],
     "url": "https://github.com/BookerLiu/GeekDesk/releases/download/2.5.15/GeekDesk.2.5.15.zip",
-    "hash": "4d27000ad20314d0771672135636825ba76fd14374fdbaa918bca1595e944428",
-    "extract_dir": "GeekDesk 2.5.15",
     "pre_install": [
         "# 创建数据目录",
         "if (!(Test-Path \"$persist_dir\\Data\")) {",
@@ -33,14 +31,14 @@
     ],
     "persist": [
         "Data",
-        "bak"
+        "bak",
+        "GeekDesk.exe.config"
     ],
     "checkver": {
         "github": "https://github.com/BookerLiu/GeekDesk",
         "regex": "GeekDesk[\\s]+([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://github.com/BookerLiu/GeekDesk/releases/download/$version/GeekDesk.$version.zip",
-        "extract_dir": "GeekDesk $version"
+        "url": "https://github.com/BookerLiu/GeekDesk/releases/download/$version/GeekDesk.$version.zip"
     }
 }
